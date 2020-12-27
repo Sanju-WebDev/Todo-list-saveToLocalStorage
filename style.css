@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #ff99ff, #ffccff);
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+header h1{
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+    color: #220033;
+
+}
+
+
+#input-container h2{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#formdiv {
+    display: flex;
+    justify-content: center;
+}
+
+#input-container #input-form{
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+#inputitem{
+    width: 0px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+#input-btn{
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ff99ff;
+    color: white;
+}
+
+#input-btn:hover {
+    background-color: white;
+    color: #ff99ff;
+}
+
+#input-form:hover #inputitem, #inputitem:focus{
+    width:250px;
+    transition: all 0.8s ease;
+
+}
+
+#todo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#todo-list #todo-items{
+    list-style: none;
+    min-width: 30%;
+}
+
+
+.todo-div{
+    margin: 0.8rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    min-height: 30px;
+}
+
+.todo-item{
+    flex: 1;
+    padding: 10px;
+}
+
+.trash-btn, .check-btn{
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    color: #ff99ff;
+}
+
+.trash-btn:hover, .check-btn:hover{
+    color: white;
+    background-color: #ffccff;
+}
+
+.checked{
+    opacity: 0.5;
+}
+
+.checked li{
+    text-decoration: line-through;
+}
+ 
+.fall{
+    transition: all 0.5s ease;
+    transform:  translateY(15rem) rotateZ(90deg);
+    opacity: 0;
+}
+
+footer {
+    display: flex;
+}
+
+.select-op {
+    position: absolute;
+    bottom: 75%;
+    right: 10%;
+    width: 20%;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #ff99ff;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+

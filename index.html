@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="todo-list, save to localstorage, javascript, html, css, json"/>
+    <meta name="description" content="A simple todo list made with html, css and vanilla javascript that lets you record a todo list, mark an item done and delete items 
+    from list with a little animation. an extended proprty of this project is its capability to store the remaining items in the list to localstorage so that each time you 
+    visit the list the items that were not deleted from the previous time remains in the localstorage for further reference."/>
+    <meta name="author" content="Manjunath-A, amanjunathmanju4@gmail.com">
+    <title>Project Todo list</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>TODO list</h1>
+</header>
+<div id="todolist-container">    
+    <div id="input-container">        
+        <h2>Please enter item to add</h2>            
+            <div id="formdiv">            
+                <form id="input-form">
+                    <input type="text" name="input" id="inputitem"></input>
+                    <button id="input-btn" href=#>+</button>
+                </form>
+            </div>
+   </div>    
+    <div id="todo-list">
+        <ul class="list" id="todo-items">   
+        </ul>
+    </div>
+</div>
+<footer>
+    <div class='select'>
+        <select name="choice" class="select-op">
+            <option value="all">All</option>
+            <option value="checked">checked</option>
+            <option value="yet to be done">yet to be done</option>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
